@@ -4,8 +4,8 @@ import { useNavigation } from '@react-navigation/native';
 const LoginScreen = () => {
   const navigation = useNavigation();
   return (
-    <View className="flex h-full w-full flex-col items-center justify-center">
-      <Text className="mb-4 text-2xl">Login</Text>
+    <View className="container">
+      <Text className="mb-4 text-2xl font-bold">Login</Text>
       <View className="flex flex-col gap-4">
         <View className="flex flex-row items-center justify-center gap-3">
           <Text>Enter Username:</Text>
