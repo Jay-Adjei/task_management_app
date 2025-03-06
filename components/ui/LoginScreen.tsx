@@ -1,6 +1,8 @@
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const LoginScreen = () => {
+  const navigation = useNavigation();
   return (
     <View className="flex h-full w-full flex-col items-center justify-center">
       <Text className="mb-4 text-2xl">Login</Text>
@@ -19,7 +21,7 @@ const LoginScreen = () => {
         </View>
         <View className="space-between flex flex-row items-center justify-center gap-3">
           <Text>Don't have an account?</Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('Register')}>
             <Text className="text-blue-500">Register</Text>
           </TouchableOpacity>
         </View>
