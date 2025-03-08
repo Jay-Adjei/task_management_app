@@ -1,24 +1,23 @@
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { Button } from 'react-native-paper';
 
 const LoginScreen = () => {
   const navigation = useNavigation();
   return (
     <View className="container">
       <Text className="mb-4 text-2xl font-bold">Login</Text>
-      <View className="flex flex-col gap-4">
-        <View className="flex flex-row items-center justify-center gap-3">
-          <Text>Enter Username:</Text>
-          <TextInput placeholder="Enter here" className="w-[10rem] rounded-lg border-2" />
-        </View>
-        <View className="flex flex-row items-center justify-center gap-3">
-          <Text>Enter Password:</Text>
-          <TextInput
-            secureTextEntry
-            placeholder="Password"
-            className="w-[10rem] rounded-lg border-2"
-          />
-        </View>
+      <View className="flex flex-col items-center justify-center gap-4">
+        <TextInput placeholder="Enter Emial" className="w-[15rem] rounded-lg border-2" />
+        <TextInput
+          secureTextEntry
+          placeholder="Enter Password"
+          className="w-[15rem] rounded-lg border-2"
+        />
+        <Button mode="contained" className="w-[15rem]" buttonColor="black" onPress={() => navigation.navigate('Home')}>
+          {' '}
+          Sign in{' '}
+        </Button>
         <View className="space-between flex flex-row items-center justify-center gap-3">
           <Text>Don't have an account?</Text>
           <TouchableOpacity onPress={() => navigation.navigate('Register')}>
