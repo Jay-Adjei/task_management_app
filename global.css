@@ -2,15 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: conic-gradient(from 0deg at center, #000000, #ffffff, #000000);
+@layer base {
+  * {
+    @apply border-border !scroll-smooth;
+  }
+  body {
+    @apply bg-background text-text;
+}
 }
 
 @layer utilities {
   .container {
     @apply flex h-full w-full flex-col items-center justify-center;
-  }
-  .background {
-    @apply bg-[conic-gradient(from_0deg_at_center,_#000000,_#ffffff,_#000000)];
   }
 }

@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 const LandingScreen = () => {
   const navigation = useNavigation();
   return (
-    <View className="container ">
+    <View className="container bg-slate">
       <Text className="mb-4 text-2xl font-bold">Hi there, Welcome</Text>
       <Button
         mode="outlined"

@@ -15,7 +15,7 @@ const CustomTextInput: React.FC<CustomTextInputProps> = ({
       <RNTextInput
         placeholder={placeholder}
         {...otherProps}
-        className={`rounded-lg border-2 ${styles}`}
+        className={`w-full rounded-lg border-2 ${styles}`}
       />
     </View>
   );
