@@ -22,7 +22,7 @@ const LoginScreen = () => {
         <View className="space-between flex flex-row items-center justify-center gap-3">
           <Text>Don't have an account?</Text>
           <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-            <Text className="text-blue-500">Register</Text>
+            <Text className="text-blue-500">Sign Up</Text>
           </TouchableOpacity>
         </View>
       </View>
